@@ -1,6 +1,17 @@
+
 # 元素抖动提醒
+- 安装
+	* `npm install shake_notice -D`
+- 导入
+	* `import  'shake_notice'`
+-   直接使用
+```javascript
+<button class="apply-shake"></button>
+```
+
 -	Vue2 封装成自定义指令
 ```javascript
+
 Vue.directive('shake', {
   bind(el, binding) {
     el.addEventListener('animationend', (e) => {
